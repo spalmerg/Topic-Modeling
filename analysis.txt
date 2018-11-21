@@ -1,0 +1,103 @@
+Task 1: 
+
+Problem 1- 
+Counts
++--------+---------------------+--------+
+| Gender | Sentiment           | Total  |
++--------+---------------------+--------+
+|        | Positive | Negative | 20,421 |
++--------+----------+----------+--------+
+| Female | 2686     | 2120     | 4806   |
++--------+----------+----------+--------+
+| Male   | 9877     | 5738     | 15615  |
++--------+----------+----------+--------+
+| Total  | 12563    | 7858     | 20421  |
++--------+----------+----------+--------+
+
+Percentages
++--------+---------------------+-------+
+| Gender | Sentiment           | Total |
++--------+---------------------+-------+
+|        | Positive | Negative |       |
++--------+----------+----------+-------+
+| Female | 56%      | 44%      | 24%   |
++--------+----------+----------+-------+
+| Male   | 63%      | 37%      | 76%   |
++--------+----------+----------+-------+
+| Total  | 62%      | 38%      | 100%  |
++--------+----------+----------+-------+
+
+Problem 2 - Table
+1 - Reviews written by patients of doctors who are not necessarily part of the company’s clinic. 
+2 - 20,421 reviews
+3 - Doctor’s name, doctor’s gender, doctor specialty, clinic location, review sentiment (0-5), qualitative rating (text)
+4 - None systematically exists, however, some may exist within the reviews. 
+5 - The corpus is not balanced, we have more men, and the men tend to be rated more positively than women. 
+
+Short Answer - 
+- RateMD contains no (clear) patient information, as the ratings from this company would
+- RateMD is more focused on reviewing doctors, rather than on reviewing the practice itself (which includes doctor, staff, nurses, etc.) 
+- RateMD is will include a lot of selection bias, because reviewers feel motivated enough to go on the web and write a review. This company’s reviews, however, will likely be solicited and contain more unbiased reviews.
+
+
+Task 2: 
+Preprocessing - 
+- I filtered out English stop words
+- The most frequent 200 words in the reviews
+- Words that occurred fewer than 10 times in the reviews
+- The doctors last names
+- All numbers 
+- After this manipulation, my vocabulary is 2,893 words
+
+Problem 1 - 
+1. Family Planning - son, child, baby, daughter, pregnancy, children, delivered, pregnant, old, husband
+2. Cancer/Research - husband, cancer, breast, hospital, er, knowledge, top, free, area, research
+3. Good Bedside Manner (caring) - amazing, truly, cares, compassionate, thank, awesome, everyone, helped, comfortable, friends
+4. Long Wait - waiting, phone, hours, hour, apt, waited, calls, exam, front, late
+5. Good Bedside Manner (smart) - , thorough, concerns, listens, health, easy, talk, knowledgeable, things, understand, makes
+6. Unknown - months, saw, second, later, weeks, knee, opinion, year, ago, procedure
+7. Bad Reviews - worst, money, horrible, wrong, test, pay, bad, unprofessional, terrible, nothing
+8. Surgery/Unknown - procedure, skin, look, face, removed, foot, body, hip, bad, area
+9. Serious Illness - medication, diagnosed, blood, months, hospital, condition, right, tests, symptoms, home
+10. Unknown - listen, else, side, health, medicine, try, seems, think, issues, gives
+
+Problem 2 - 
+1. Unknown - doc, cancer, state, month, speak, symptom, phone, lab, record, receive
+2. Eyecare - test, eye, come, pap, order, script, later, lasik, front, side
+3. Breast Augmentation - procedure, breast, implant, follow, explain, able, late, code, want, infection
+4. Dental - daughter, tooth, exam, baby, decide, money, cavity, routine, therapy, health
+5. Unknown - mri, dad, vein, specialist, scar, condition, kid, program, comp, ivf
+6. Unknown - husband, thyroid, prescription, seem, leak, tip, ovary, ear, sister, forget
+7. Family/Unknown - son, bill, child, father, wife, nose, hour, give, hand, hip
+8. Book Appointment/Unknown - mother, look, clinic, hospital, refill, cigna, sign, schedule, colonoscopy, book
+9. Unknown - medication, try, start, birth, arm, body, psychiatrist, severe, use, tech
+10. Clinic/Unknown - appt, wait, week, pay, think, flu, ask, steroid, walk, woman
+
+Problem 3 - 
+I believe that the model without lemmatization generated better, clearer topics. It seems to make more natural groupings of words that have clear themes. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

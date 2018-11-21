@@ -1,0 +1,1 @@
+To run this submission, download ratings from RateMD and store in a file name `ratemd.25k.all.txt` on the same level as the Jupyter notebook. Then simply open the jupyter notebook and run from the top-down. 
